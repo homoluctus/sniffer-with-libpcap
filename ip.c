@@ -72,7 +72,7 @@ void callback(u_char *user, const struct pcap_pkthdr *p_hdr, const u_char *packe
   printf("Flagment offset\t\t: 0x%04x\n", ntohs(ip_hdr->ip_off));
   printf("TTL\t\t\t: %u\n", ip_hdr->ip_ttl);
   printf("Protocol\t\t: 0x%02x\n", ip_hdr->ip_p);
-  //printf("Checksum\t\t: %u\n", ntohs(ip_hdr->ip_sum));
+  printf("Checksum\t\t: %u\n", ntohs(ip_hdr->ip_sum));
   printf("SRC address\t\t: %s\n", inet_ntoa(ip_hdr->ip_src));
   printf("DST address\t\t: %s\n\n", inet_ntoa(ip_hdr->ip_dst));
 }

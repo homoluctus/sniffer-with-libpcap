@@ -74,6 +74,6 @@ void callback(u_char *user, const struct pcap_pkthdr *p_hdr, const u_char *packe
   printf("Source port\t: %u\n", ntohs(u_hdr->source));
   printf("Destination port: %u\n", ntohs(u_hdr->dest));
   printf("Length\t\t: %u\n", ntohs(u_hdr->len));
-  //printf("Checksum\t: %u\n", ntohs(u_hdr->check));
+  printf("Checksum\t: %u\n", ntohs(u_hdr->check));
   putchar('\n');
 }
